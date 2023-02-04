@@ -41,6 +41,9 @@ li {
   justify-content: flex-end;
   background-color: var(--green);
 }
+#mobile-pic{
+  display: none;
+}
 #header-text {
   margin: 2rem 9rem;
   color: white;
@@ -206,7 +209,6 @@ li {
 @media (max-width: 660px) {
   #header {
     height: 30rem;
-
     display: flex;
   }
   #header-text {
@@ -214,6 +216,10 @@ li {
   }
   body {
     height: auto;
+  }
+  .person-container{
+  margin:auto;
+  margin-top: -220px;
   }
   .person-info {
     display: flex;
@@ -240,4 +246,16 @@ li {
     margin-right: 0;
     padding: 0 1rem;
   }
+}
+@media (hover: none) {
+  #picture-section{
+   display: none; 
+  }
+#mobile-pic{
+  display: inline;
+  margin: auto;
+}
+#person-pic{
+  margin: auto;
+}
 }
