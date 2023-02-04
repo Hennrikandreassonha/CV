@@ -148,7 +148,7 @@ li {
 #education li,
 #qualities p,
 #work-experience p {
-  margin-right: 4rem;
+  /* margin-right: 4rem; */
 }
 #work-education-info {
   display: flex;
@@ -157,12 +157,13 @@ li {
   max-height: 100%;
   float: right;
   position: relative;
+  margin-right: 3rem;
 }
 .tooltip {
   display: none;
   position: absolute;
   top: -35px;
-  transform: translate( -50%);
+  transform: translate(-50%);
   text-align: center;
   background-color: white;
   padding: 5px;
@@ -177,43 +178,72 @@ li {
   position: relative;
   display: inline-block;
 }
-@media (max-width: 880px){
-  #header-text{
-    margin-top: 5rem;
-    margin-right: 2rem;
+@media (max-width: 880px) {
+  body {
+    height: 92rem;
   }
-#arrow{
-  position: absolute;
-}
-}
-@media (max-width: 660px){
-  #header{
-    height:30rem;
+  #header-text {
+    margin: auto;
+    margin-top: 8rem;
   }
-  #header-text{
-    margin:auto 2 rem 0;
+  #header {
+    height: 30rem;
   }
-  body{
-    height:136rem;
-  }
-  .person-info{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    align-items: center;
-  }
-  #work-education-info{
-    display: flex;
-    flex-direction: column;
-    max-height: 100%;
-    width:100%;
+  #header-text {
     text-align: center;
-    position: static;
   }
-  #th-pic{
+  #arrow {
+    position: absolute;
+  }
+  .work-education-info > * {
+    text-align: center;
+    color: blue;
+  }
+  .work-education-info > * {
+    text-align: center;
+    color: blue;
+  }
+
+  #th-pic {
     bottom: 0;
     left: 0;
     position: relative;
-    width:100%
+  }
+}
+@media (max-width: 660px) {
+  #header {
+    height: 30rem;
+
+    display: flex;
+  }
+  #header-text {
+    text-align: center;
+  }
+  body {
+    height: auto;
+  }
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  #work-education-info {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    width: 100%;
+    text-align: center;
+    position: static;
+    float: none;
+  }
+  #th-pic {
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+
+  #work-education-info > * {
+    margin-right: 0;
   }
 }
