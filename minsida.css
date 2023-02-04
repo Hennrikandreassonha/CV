@@ -245,5 +245,6 @@ li {
 
   #work-education-info > * {
     margin-right: 0;
+    padding: 0 1rem;
   }
 }
