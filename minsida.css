@@ -254,7 +254,7 @@ li {
   #picture-section{
    display: none; 
   }
-  #person-pic{
+  #person-pic-mobile{
     display: inline-block;
   }
 }
