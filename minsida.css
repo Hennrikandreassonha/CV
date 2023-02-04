@@ -145,11 +145,6 @@ li {
   bottom: 0;
   left: 0;
 }
-#education li,
-#qualities p,
-#work-experience p {
-  /* margin-right: 4rem; */
-}
 #work-education-info {
   display: flex;
   flex-direction: column;
@@ -197,11 +192,9 @@ li {
   }
   .work-education-info > * {
     text-align: center;
-    color: blue;
   }
   .work-education-info > * {
     text-align: center;
-    color: blue;
   }
 
   #th-pic {
