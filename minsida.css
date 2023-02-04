@@ -1,0 +1,219 @@
+:root {
+  --green: #00594f;
+}
+html {
+  background-color: lightslategray;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  height: 80rem;
+  position: relative;
+}
+h1 {
+  font-size: 2.2rem;
+}
+a,
+.greenh1 {
+  color: var(--green);
+  font-weight: 500;
+}
+li {
+  color: var(--green);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+#pic {
+  z-index: 2;
+  float: right;
+  width: 5rem;
+}
+#btn {
+  float: right;
+}
+#header {
+  display: flex;
+  height: 15rem;
+  border-bottom: 1px black solid;
+  justify-content: flex-end;
+  background-color: var(--green);
+}
+#header-text {
+  margin: 2rem 9rem;
+  color: white;
+}
+#arrow {
+  background-color: #ed8b00;
+  margin: 2rem 0 0 0;
+  height: 3rem;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem 0 0 1rem;
+}
+#arrow > * {
+  display: inline-block;
+  color: white;
+}
+#person-pic {
+  max-width: 9rem;
+  position: relative;
+  z-index: 2;
+  margin-left: 2.2rem;
+  transform: scale(1.3);
+  transition: transform 250ms ease-in-out;
+  left: 1rem;
+}
+.person-container:hover #person-pic {
+  transform: translateY(-1.5rem) scale(1.4);
+}
+.person-container {
+  position: relative;
+  margin-top: -17rem;
+  margin-left: 4rem;
+  max-width: 15rem;
+  aspect-ratio: 1/1.5;
+  display: grid;
+  align-items: end;
+  border-radius: 0 0 100vw 100vw;
+  overflow: hidden;
+  transition: transform 250ms ease-in-out;
+}
+.person-container:hover {
+  transform: scale(1.1);
+}
+#person-background {
+  max-width: 15rem;
+  position: absolute;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+#dark-light-mode {
+  background-color: aliceblue;
+  float: right;
+}
+.person-info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+  width: 40%;
+  max-height: 100%;
+}
+#item-1 {
+  margin-top: 1.3rem;
+}
+#item-1 h1 {
+  color: var(--green);
+  text-align: center;
+  margin: 0.5rem auto;
+  font-size: 2rem;
+}
+#item-1 h2 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.3rem;
+}
+#contact-info {
+  margin-left: 3rem;
+}
+#contact-info img {
+  vertical-align: middle;
+  margin-right: 1.5rem;
+  transition: transform 250ms ease-in-out;
+}
+#contact-info img:hover {
+  transform: scale(1.5);
+}
+.person-info-pics {
+  max-width: 1.8rem;
+}
+#item-3 {
+  margin-left: 2rem;
+}
+#item-3 h1 {
+  margin: 0.7rem 1rem;
+  color: var(--green);
+}
+#th-pic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#education li,
+#qualities p,
+#work-experience p {
+  margin-right: 4rem;
+}
+#work-education-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-height: 100%;
+  float: right;
+  position: relative;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -35px;
+  transform: translate( -50%);
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  background-color: grey;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.person-info-pics:hover + .tooltip {
+  display: block;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+@media (max-width: 880px){
+  #header-text{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+#arrow{
+  position: absolute;
+}
+}
+@media (max-width: 660px){
+  #header{
+    height:30rem;
+  }
+  #header-text{
+    margin:auto 2 rem 0;
+  }
+  body{
+    height:136rem;
+  }
+  .person-info{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+  }
+  #work-education-info{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    width:100%;
+    text-align: center;
+    position: static;
+  }
+  #th-pic{
+    bottom: 0;
+    left: 0;
+    position: relative;
+    width:100%
+  }
+}
