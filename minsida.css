@@ -41,8 +41,11 @@ li {
   justify-content: flex-end;
   background-color: var(--green);
 }
-#mobile-pic{
-  display: none;
+
+#person-pic-mobile{
+  max-width: 9rem;
+  margin-top: -10rem;
+  border-radius:100px;
 }
 #header-text {
   margin: 2rem 9rem;
