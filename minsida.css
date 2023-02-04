@@ -42,7 +42,7 @@ li {
   background-color: var(--green);
 }
 #person-pic-mobile{
-  max-width: 9rem;
+  max-width: 12rem;
   margin-top: -10rem;
   border-radius:100px;
   display:none;
