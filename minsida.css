@@ -28,13 +28,37 @@ a,
 
 .green-text {
   color: var(--green);
-
 }
+
+.blue-text {
+  color: rgb(19, 127, 185);
+}
+
 
 li {
   color: var(--green);
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+#education-col-1 * {
+  margin: 0 !important;
+  padding: 0;
+}
+#education-col-1{
+  padding:0;
+}
+#education-col-1 li {
+  border: 1px solid var(--green);
+  border-radius: 15px;
+  padding: 0.7rem;
+  margin: 1rem;
+
+  list-style-type: none;
+}
+
+#education-col-1 li:nth-child(even) {
+  background-color: lightyellow;
 }
 
 #pic {
