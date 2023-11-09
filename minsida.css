@@ -33,7 +33,9 @@ a,
 .blue-text {
   color: rgb(19, 127, 185);
 }
-
+#qualities p, #contactinfo *{
+  font-weight: 400;
+}
 
 li {
   color: var(--green);
@@ -218,6 +220,7 @@ li {
   float: right;
   position: relative;
   margin-right: 3rem;
+  margin-top: -60px;
 }
 
 .tooltip {
