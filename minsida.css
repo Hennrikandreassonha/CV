@@ -49,6 +49,8 @@ li {
 }
 #education-col-1{
   padding:0;
+  overflow: scroll;
+  max-height: 500px;
 }
 #education-col-1 li {
   border: 1px solid var(--green);
