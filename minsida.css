@@ -12,7 +12,7 @@ body {
   max-width: 1000px;
   margin: auto;
   background-color: white;
-  height: 80rem;
+  height: 85rem;
   position: relative;
 }
 
@@ -282,6 +282,9 @@ li {
     left: 0;
     position: relative;
   }
+}
+.course-header{
+  margin-top:3rem;
 }
 
 @media (max-width: 660px) {
