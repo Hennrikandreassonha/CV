@@ -33,6 +33,9 @@ a,
 .blue-text {
   color: rgb(19, 127, 185);
 }
+#qualities{
+  margin-top: -40px;
+}
 #qualities p, #contactinfo *{
   font-weight: 400;
 }
@@ -91,7 +94,10 @@ li {
 }
 
 #header-text {
-  margin: 2rem 9rem;
+  margin: 2rem;
+  margin-right: 13rem;
+  width:230px;
+  /* margin-left:0px; */
   color: white;
 }
 
@@ -255,14 +261,11 @@ li {
   #header-text {
     margin: auto;
     margin-top: 8rem;
+    text-align: center;
   }
 
   #header {
     height: 30rem;
-  }
-
-  #header-text {
-    text-align: center;
   }
 
   #arrow {

@@ -46,7 +46,7 @@ animateHeader();
 
 async function animateHeader() {
 
-  let mainHeaderText = "Söker praktikplats"
+  let mainHeaderText = "Välkommen!"
 
   for (let index = 0; index < mainHeaderText.length; index++) {
 
@@ -63,8 +63,8 @@ async function animateHeader() {
 
 async function AnimateSecondaryHeader() {
 
-  let secondaryHeaderPart1 = "Lia-period vecka ";
-  let secondaryHeaderPart2 = "42-49";
+  let secondaryHeaderPart1 = "Kul att du hittat hit!";
+  let secondaryHeaderPart2 = "";
 
   for (let index = 0; index < secondaryHeaderPart1.length; index++) {
 
